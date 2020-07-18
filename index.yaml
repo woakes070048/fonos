@@ -2,8 +2,50 @@ apiVersion: v1
 entries:
   fonos:
   - apiVersion: v2
-    appVersion: 0.0.17
-    created: "2020-07-17T16:52:21.373057-04:00"
+    appVersion: 0.0.19
+    created: "2020-07-18T15:46:41.968854-04:00"
+    dependencies:
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.6.18
+    - name: minio
+      repository: https://hkube.io/helm
+      version: 5.0.23
+    description: "Project Fonos assembles the components needed to deploy a telephony
+      system. \nIt helps VoIP integrators quickly deploy new networks and include
+      value-added \nservices such as Programmable Voice, Messaging, and Video.\n"
+    digest: 7c4f71423834492c701a90ee6aacc03159c5a68ab77a1d72bb9810f5481ebd41
+    keywords:
+    - twilio
+    - routr
+    - sip
+    - voip
+    - webrtc
+    - ims
+    - proxy
+    - registrar
+    - asterisk
+    - kamailio
+    - freepbx
+    - yate
+    - freeswitch
+    - fusionpbx
+    - server
+    maintainers:
+    - email: fonosterteam@fonoster.com
+      name: Fonoster
+    - email: psanders@fonoster.com
+      name: psanders
+    name: fonos
+    sources:
+    - https://github.com/fonoster/fonos
+    type: application
+    urls:
+    - fonos-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.15
+    created: "2020-07-18T15:46:41.960455-04:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -40,4 +82,4 @@ entries:
     urls:
     - fonos-0.0.1.tgz
     version: 0.0.1
-generated: "2020-07-17T16:52:21.359686-04:00"
+generated: "2020-07-18T15:46:41.949927-04:00"
