@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://fonoster.github.com/docs/programmable-voice/</loc>
+     <loc>https://fonoster.github.com/fonos/programmable-voice/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/guides/installing-on-minikube/</loc>
+     <loc>https://fonoster.github.com/fonos/guides/installing-on-minikube/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/guides/deploying-voip-network/</loc>
+     <loc>https://fonoster.github.com/fonos/guides/deploying-voip-network/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/guides/creating-app/</loc>
+     <loc>https://fonoster.github.com/fonos/guides/creating-app/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/AbstractTTS/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/AbstractTTS/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/Agents/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/Agents/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/AppManager/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/AppManager/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/Domains/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/Domains/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/GoogleASR/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/GoogleASR/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/GoogleTTS/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/GoogleTTS/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/MaryTTS/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/MaryTTS/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/Numbers/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/Numbers/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/Providers/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/Providers/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/Storage/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/Storage/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://fonoster.github.com/docs/reference/Verbs/</loc>
+     <loc>https://fonoster.github.com/fonos/reference/Verbs/</loc>
      <lastmod>2020-08-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
