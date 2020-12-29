@@ -215,8 +215,6 @@
   <a class="logo" href="/fonos/"><img src="/fonos/assets/logo.png" height="45"/></a>
   <span style="flex:1"></span>
   <a href="https://github.com/fonoster/fonos/issues">Report Bugs</a>
-  <!--<a href="/docs/introduction/community">Join the Community</a>
-  <a href="https://groups.google.com/forum/#!forum/routr-users">Ask Questions</a>-->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -939,19 +937,16 @@
 <p>Start minikube using at least 4GB of memory</p>
 <div class="highlight"><pre><span></span><code>minikube start --memory<span class="o">=</span><span class="m">4052</span>
 </code></pre></div>
-
 <h2 id="installing-nginx-ingress-controller">Installing NGINX Ingress Controller<a class="headerlink" href="#installing-nginx-ingress-controller" title="Permanent link">&para;</a></h2>
 <p>To enable the NGINX Ingress controller, run the following command:</p>
 <div class="highlight"><pre><span></span><code>minikube addons <span class="nb">enable</span> ingress
 </code></pre></div>
-
 <blockquote>
 <p>If you are having issues enabling the addon, and you are on OSX, try starting minikube with the <code>Hyperkit</code> driver</p>
 </blockquote>
 <p>Verify that NGINX Ingress controller is running</p>
 <div class="highlight"><pre><span></span><code>kubectl get pods -n kube-system
 </code></pre></div>
-
 <blockquote>
 <p>Note: This can take up to a minute.</p>
 </blockquote>
@@ -964,12 +959,10 @@ kubernetes-dashboard-5498ccf677-b8p5h       1/1       Running   0          2m
 nginx-ingress-controller-5984b97644-rnkrg   1/1       Running   0          1m
 storage-provisioner         
 </code></pre></div>
-
 <h2 id="creating-and-installing-the-ssl-certificates-and-jwt-token">Creating and Installing the SSL certificates and JWT Token<a class="headerlink" href="#creating-and-installing-the-ssl-certificates-and-jwt-token" title="Permanent link">&para;</a></h2>
 <p>Run the following commmand to create and install the certificates and the token:</p>
 <div class="highlight"><pre><span></span><code>fonos config:init
 </code></pre></div>
-
 <h2 id="installing-fonos-in-your-cluster">Installing Fonos in your Cluster<a class="headerlink" href="#installing-fonos-in-your-cluster" title="Permanent link">&para;</a></h2>
 <p>Run the following command to install Fonos in your minikube:</p>
 <div class="highlight"><pre><span></span><code>helm install --wait my-release <span class="se">\</span>
@@ -979,7 +972,6 @@ storage-provisioner
 --set mediaserver.service.type<span class="o">=</span>NodePort <span class="se">\</span>
 fonoster/fonos
 </code></pre></div>
-
 <blockquote>
 <p>Take your minikube's IP and create a new entry in your local DNS host file. The host must match your initial configuration(defaults to <code>fonos.local</code>).</p>
 </blockquote>
@@ -990,11 +982,9 @@ fonoster/fonos
 kubectl patch configmap tcp-services -n kube-system --patch &#39;{&quot;data&quot;:{&quot;5060&quot;:&quot;default/fonos-sipproxy:5060&quot;}}&#39;
 kubectl patch configmap udp-services -n kube-system --patch &#39;{&quot;data&quot;:{&quot;5060&quot;:&quot;default/fonos-sipproxy:5060&quot;}}&#39;
 </code></pre></div>
-
 <p>Then,</p>
 <div class="highlight"><pre><span></span><code>kubectl patch deployment ingress-nginx-controller --patch &quot;$(cat ingress-nginx-controller-patch.yaml)&quot; -n kube-system
 </code></pre></div>
-
 <div class="highlight"><pre><span></span><code>spec:
   template:
     spec:
@@ -1008,7 +998,6 @@ kubectl patch configmap udp-services -n kube-system --patch &#39;{&quot;data&quo
          - containerPort: 6060
            hostPort: 6060
 </code></pre></div>
-
 <blockquote>
 <p>Replace <code>kube-system</code> with nginx namespace and <code>default</code> with your the namespace of your release</p>
 </blockquote>
