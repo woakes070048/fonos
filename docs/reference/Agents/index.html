@@ -1065,7 +1065,7 @@
                 <p><a name="Agents"></a></p>
 <h2 id="agents-fonosservice">Agents ⇐ <code>FonosService</code><a class="headerlink" href="#agents-fonosservice" title="Permanent link">&para;</a></h2>
 <p>Use Fonos Agents, a capability of Fonos SIP Proxy subsystem,
-to create, update, get and delete Agents. Fonos Agents requires of a
+to create, update, get and delete Agents. Agents requires of a
 running Fonos deployment.</p>
 <p><strong>Kind</strong>: global class<br />
 <strong>Extends</strong>: <code>FonosService</code><br />
@@ -1161,7 +1161,7 @@ running Fonos deployment.</p>
 </code></pre></div>
 <a name="Agents+getAgent"></a></p>
 <h3 id="agentsgetagentref-promiseobject">agents.getAgent(ref) ⇒ <code>Promise.&lt;Object&gt;</code><a class="headerlink" href="#agentsgetagentref-promiseobject" title="Permanent link">&para;</a></h3>
-<p>Retrives a Agent by its reference.</p>
+<p>Retrives an Agent by reference.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Agents"><code>Agents</code></a><br />
 <strong>Returns</strong>: <code>Promise.&lt;Object&gt;</code> - The agent<br />
 <strong>Throws</strong>:</p>
@@ -1192,7 +1192,7 @@ running Fonos deployment.</p>
 </code></pre></div>
 <a name="Agents+updateAgent"></a></p>
 <h3 id="agentsupdateagentrequest-promiseobject">agents.updateAgent(request) ⇒ <code>Promise.&lt;Object&gt;</code><a class="headerlink" href="#agentsupdateagentrequest-promiseobject" title="Permanent link">&para;</a></h3>
-<p>Update a Agent at the SIP Proxy subsystem.</p>
+<p>Update an Agent at the SIP Proxy subsystem.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Agents"><code>Agents</code></a><br />
 <strong>Returns</strong>: <code>Promise.&lt;Object&gt;</code> - The Agent from the database  </p>
 <table>
@@ -1239,7 +1239,7 @@ running Fonos deployment.</p>
 </code></pre></div>
 <a name="Agents+listAgents"></a></p>
 <h3 id="agentslistagentsrequest-promiselistagentsresponse">agents.listAgents(request) ⇒ <code>Promise.&lt;ListAgentsResponse&gt;</code><a class="headerlink" href="#agentslistagentsrequest-promiselistagentsresponse" title="Permanent link">&para;</a></h3>
-<p>List the Agents registered in Fonos SIP Proxy subsystem.</p>
+<p>List registered Agents in Fonos SIP Proxy subsystem.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Agents"><code>Agents</code></a><br />
 <strong>Returns</strong>: <code>Promise.&lt;ListAgentsResponse&gt;</code> - List of Agents  </p>
 <table>
@@ -1259,7 +1259,7 @@ running Fonos deployment.</p>
 <tr>
 <td>request.pageSize</td>
 <td><code>agent</code></td>
-<td>Agent of element per page (defaults to 20)</td>
+<td>Elements per page (defaults to 20)</td>
 </tr>
 <tr>
 <td>request.pageToken</td>
@@ -1281,7 +1281,7 @@ running Fonos deployment.</p>
 </code></pre></div>
 <a name="Agents+deleteAgent"></a></p>
 <h3 id="agentsdeleteagentref">agents.deleteAgent(ref)<a class="headerlink" href="#agentsdeleteagentref" title="Permanent link">&para;</a></h3>
-<p>Deletes a Agent from SIP Proxy subsystem.</p>
+<p>Deletes an Agent from the SIP Proxy subsystem.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Agents"><code>Agents</code></a>  </p>
 <table>
 <thead>
@@ -1295,7 +1295,7 @@ running Fonos deployment.</p>
 <tr>
 <td>ref</td>
 <td><code>string</code></td>
-<td>Reference to the Agent</td>
+<td>Agent's reference</td>
 </tr>
 </tbody>
 </table>
