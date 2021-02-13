@@ -1085,8 +1085,8 @@ running Fonos deployment.</p>
 <h3 id="new-domains">new Domains()<a class="headerlink" href="#new-domains" title="Permanent link">&para;</a></h3>
 <p>Constructs a new Domains object.</p>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">Fonos</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@fonos/sdk&#39;</span><span class="p">)</span>
-<span class="kr">const</span> <span class="nx">domains</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fonos</span><span class="p">.</span><span class="nx">Domains</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">Fonos</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@fonos/sdk&#39;</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">domains</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fonos</span><span class="p">.</span><span class="nx">Domains</span><span class="p">()</span>
 
 <span class="nx">domains</span><span class="p">.</span><span class="nx">createDomain</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Local Domain&#39;</span><span class="p">,</span> <span class="nx">domainUri</span><span class="o">:</span> <span class="s1">&#39;sip.local&#39;</span><span class="p">...})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -1144,7 +1144,7 @@ running Fonos deployment.</p>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Local Domain&#39;</span><span class="p">,</span>
    <span class="nx">domainUri</span><span class="o">:</span> <span class="s1">&#39;sip.local&#39;</span><span class="p">,</span>
    <span class="nx">egressRule</span><span class="o">:</span> <span class="s1">&#39;.*&#39;</span><span class="p">,</span>
@@ -1240,7 +1240,7 @@ running Fonos deployment.</p>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
    <span class="nx">ref</span><span class="o">:</span> <span class="s1">&#39;507f1f77bcf86cd799439011&#39;</span>
    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Office Domain &#39;</span><span class="p">,</span>
    <span class="nx">accessAllow</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;192.168.1.0/255.255.255.0&#39;</span><span class="p">,</span> <span class="s1">&#39;192.168.0.1/31&#39;</span><span class="p">]</span>
@@ -1283,7 +1283,7 @@ running Fonos deployment.</p>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
    <span class="nx">pageSize</span><span class="o">:</span> <span class="mf">20</span><span class="p">,</span>
    <span class="nx">pageToken</span><span class="o">:</span> <span class="mf">2</span>
 <span class="p">}</span>
@@ -1315,7 +1315,7 @@ a Domain, you must first delete all it's Agents.</p>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="s1">&#39;507f1f77bcf86cd799439011&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="s1">&#39;507f1f77bcf86cd799439011&#39;</span>
 
 <span class="nx">domains</span><span class="p">.</span><span class="nx">deleteDomain</span><span class="p">(</span><span class="nx">ref</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
