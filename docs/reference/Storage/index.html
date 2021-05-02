@@ -1054,7 +1054,7 @@ to upload, download, and delete objects.</p>
 <strong>Throws</strong>:</p>
 <ul>
 <li>if the path does not exist or if is a directory</li>
-<li>if the bucket does not exist</li>
+<li>if the directory does not exist</li>
 </ul>
 <table>
 <thead>
@@ -1067,25 +1067,31 @@ to upload, download, and delete objects.</p>
 <tbody>
 <tr>
 <td>request</td>
-<td><code>Object</code></td>
+<td><code>UploadObjectRequest</code></td>
 <td>Object with information about the origin and destination of an object</td>
+</tr>
+<tr>
+<td>request.bucket</td>
+<td><code>string</code></td>
+<td>Bucket at the Storage system</td>
+</tr>
+<tr>
+<td>request.dir</td>
+<td><code>string</code></td>
+<td>Directory on the Storage system where your objec will be uploaded</td>
 </tr>
 <tr>
 <td>request.filename</td>
 <td><code>string</code></td>
 <td>Path to the object to be uploaded</td>
 </tr>
-<tr>
-<td>request.bucket</td>
-<td><code>string</code></td>
-<td>Directory at the Storage system to save your file.</td>
-</tr>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
    <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;/path/to/file&#39;</span><span class="p">,</span>
-   <span class="nx">bucklet</span><span class="o">:</span> <span class="s1">&#39;hello-monkeys&#39;</span>
+   <span class="nx">bucket</span><span class="o">:</span> <span class="s1">&#39;apps&#39;</span><span class="p">,</span>
+   <span class="nx">directory</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span>
 <span class="p">}</span>
 
 <span class="nx">storage</span><span class="p">.</span><span class="nx">uploadObject</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span>
@@ -1100,7 +1106,7 @@ to upload, download, and delete objects.</p>
 <strong>Returns</strong>: <code>Promise.&lt;string&gt;</code> - localy accessible URL to the object<br />
 <strong>Throws</strong>:</p>
 <ul>
-<li>if bucket or object does not exist</li>
+<li>if directory or object doesn't exist</li>
 </ul>
 <table>
 <thead>
@@ -1113,24 +1119,24 @@ to upload, download, and delete objects.</p>
 <tbody>
 <tr>
 <td>request</td>
-<td><code>Object</code></td>
+<td><code>GetObjectURLRequest</code></td>
 <td>Object with information about the location and and name of the requested object</td>
 </tr>
 <tr>
-<td>request.name</td>
+<td>request.filename</td>
 <td><code>string</code></td>
-<td>The name of the object</td>
+<td>The name of the object save your file.</td>
 </tr>
 <tr>
-<td>request.bucket</td>
+<td>request.accessKeyId</td>
 <td><code>string</code></td>
-<td>Bucket where object is located save your file.</td>
+<td>Optional access key id</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
-   <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;object-name&#39;</span><span class="p">,</span>
+   <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;object-name&#39;</span><span class="p">,</span>
    <span class="nx">bucket</span><span class="o">:</span> <span class="s1">&#39;bucket-name&#39;</span>
 <span class="p">}</span>
 

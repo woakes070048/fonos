@@ -817,22 +817,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#appmanagerdeployapppath-promiseapp" title="appManager.deployApp(path) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
-    appManager.deployApp(path) ⇒ Promise.&lt;App&gt;
+  <a href="#appmanagerdeployapppath-ref-promiseapp" title="appManager.deployApp(path, ref) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
+    appManager.deployApp(path, ref) ⇒ Promise.&lt;App&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#appmanagergetappname-promiseapp" title="appManager.getApp(name) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
-    appManager.getApp(name) ⇒ Promise.&lt;App&gt;
+  <a href="#appmanagergetappref-promiseapp" title="appManager.getApp(ref) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
+    appManager.getApp(ref) ⇒ Promise.&lt;App&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#appmanagerdeleteappname-promiseapp" title="appManager.deleteApp(name) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
-    appManager.deleteApp(name) ⇒ Promise.&lt;App&gt;
+  <a href="#appmanagerdeleteappref-promiseapp" title="appManager.deleteApp(ref) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
+    appManager.deleteApp(ref) ⇒ Promise.&lt;App&gt;
   </a>
   
 </li>
@@ -995,22 +995,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#appmanagerdeployapppath-promiseapp" title="appManager.deployApp(path) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
-    appManager.deployApp(path) ⇒ Promise.&lt;App&gt;
+  <a href="#appmanagerdeployapppath-ref-promiseapp" title="appManager.deployApp(path, ref) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
+    appManager.deployApp(path, ref) ⇒ Promise.&lt;App&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#appmanagergetappname-promiseapp" title="appManager.getApp(name) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
-    appManager.getApp(name) ⇒ Promise.&lt;App&gt;
+  <a href="#appmanagergetappref-promiseapp" title="appManager.getApp(ref) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
+    appManager.getApp(ref) ⇒ Promise.&lt;App&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#appmanagerdeleteappname-promiseapp" title="appManager.deleteApp(name) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
-    appManager.deleteApp(name) ⇒ Promise.&lt;App&gt;
+  <a href="#appmanagerdeleteappref-promiseapp" title="appManager.deleteApp(ref) ⇒ Promise.&lt;App&gt;" class="md-nav__link">
+    appManager.deleteApp(ref) ⇒ Promise.&lt;App&gt;
   </a>
   
 </li>
@@ -1059,9 +1059,9 @@ running Fonos deployment.</p>
 <ul>
 <li><a href="#AppManager">AppManager</a> ⇐ <code>FonosService</code><ul>
 <li><a href="#new_AppManager_new">new AppManager()</a></li>
-<li><a href="#AppManager+deployApp">.deployApp(path)</a> ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a></li>
-<li><a href="#AppManager+getApp">.getApp(name)</a> ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a></li>
-<li><a href="#AppManager+deleteApp">.deleteApp(name)</a> ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a></li>
+<li><a href="#AppManager+deployApp">.deployApp(path, ref)</a> ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a></li>
+<li><a href="#AppManager+getApp">.getApp(ref)</a> ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a></li>
+<li><a href="#AppManager+deleteApp">.deleteApp(ref)</a> ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a></li>
 <li><a href="#AppManager+listApps">.listApps(request)</a> ⇒ <code>Promise.&lt;ListAppsResponse&gt;</code></li>
 </ul>
 </li>
@@ -1079,7 +1079,7 @@ running Fonos deployment.</p>
 <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="AppManager+deployApp"></a></p>
-<h3 id="appmanagerdeployapppath-promiseapp">appManager.deployApp(path) ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a><a class="headerlink" href="#appmanagerdeployapppath-promiseapp" title="Permanent link">&para;</a></h3>
+<h3 id="appmanagerdeployapppath-ref-promiseapp">appManager.deployApp(path, ref) ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a><a class="headerlink" href="#appmanagerdeployapppath-ref-promiseapp" title="Permanent link">&para;</a></h3>
 <p>Deploys an application to Fonos.</p>
 <p><strong>Kind</strong>: instance method of <a href="#AppManager"><code>AppManager</code></a><br />
 <strong>Returns</strong>: <a href="#App"><code>Promise.&lt;App&gt;</code></a> - The application just created<br />
@@ -1108,6 +1108,11 @@ change to UNKNOWN.</li>
 <td><code>string</code></td>
 <td>path to the application</td>
 </tr>
+<tr>
+<td>ref</td>
+<td><code>string</code></td>
+<td>optional reference to the application</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
@@ -1119,8 +1124,8 @@ change to UNKNOWN.</li>
 <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="AppManager+getApp"></a></p>
-<h3 id="appmanagergetappname-promiseapp">appManager.getApp(name) ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a><a class="headerlink" href="#appmanagergetappname-promiseapp" title="Permanent link">&para;</a></h3>
-<p>Retrives an application by name.</p>
+<h3 id="appmanagergetappref-promiseapp">appManager.getApp(ref) ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a><a class="headerlink" href="#appmanagergetappref-promiseapp" title="Permanent link">&para;</a></h3>
+<p>Retrives an application by reference.</p>
 <p><strong>Kind</strong>: instance method of <a href="#AppManager"><code>AppManager</code></a><br />
 <strong>Returns</strong>: <a href="#App"><code>Promise.&lt;App&gt;</code></a> - The application<br />
 <strong>Throws</strong>:</p>
@@ -1137,9 +1142,9 @@ change to UNKNOWN.</li>
 </thead>
 <tbody>
 <tr>
-<td>name</td>
+<td>ref</td>
 <td><code>string</code></td>
-<td>The name of the application</td>
+<td>The reference to the application</td>
 </tr>
 </tbody>
 </table>
@@ -1150,8 +1155,8 @@ change to UNKNOWN.</li>
 <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="AppManager+deleteApp"></a></p>
-<h3 id="appmanagerdeleteappname-promiseapp">appManager.deleteApp(name) ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a><a class="headerlink" href="#appmanagerdeleteappname-promiseapp" title="Permanent link">&para;</a></h3>
-<p>Deletes an application already registered in Fonos.</p>
+<h3 id="appmanagerdeleteappref-promiseapp">appManager.deleteApp(ref) ⇒ <a href="#App"><code>Promise.&lt;App&gt;</code></a><a class="headerlink" href="#appmanagerdeleteappref-promiseapp" title="Permanent link">&para;</a></h3>
+<p>Deletes an application create on Fonos server.</p>
 <p><strong>Kind</strong>: instance method of <a href="#AppManager"><code>AppManager</code></a><br />
 <strong>Returns</strong>: <a href="#App"><code>Promise.&lt;App&gt;</code></a> - The application to remove<br />
 <strong>Throws</strong>:</p>
@@ -1168,14 +1173,14 @@ change to UNKNOWN.</li>
 </thead>
 <tbody>
 <tr>
-<td>name</td>
+<td>ref</td>
 <td><code>string</code></td>
-<td>The name of the application</td>
+<td>The reference to the application</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="nx">appManager</span><span class="p">.</span><span class="nx">deleteApp</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">appManager</span><span class="p">.</span><span class="nx">deleteApp</span><span class="p">(</span><span class="nx">ref</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;finished&#39;</span><span class="p">)</span>        <span class="c1">// returns an empty object</span>
 <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>  <span class="c1">// an error occurred</span>

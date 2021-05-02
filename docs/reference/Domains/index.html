@@ -829,22 +829,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#domainscreatedomainrequest-promiseobject" title="domains.createDomain(request) ⇒ Promise.&lt;Object&gt;" class="md-nav__link">
-    domains.createDomain(request) ⇒ Promise.&lt;Object&gt;
+  <a href="#domainscreatedomainrequest-promisecreatedomainresponse" title="domains.createDomain(request) ⇒ Promise.&lt;CreateDomainResponse&gt;" class="md-nav__link">
+    domains.createDomain(request) ⇒ Promise.&lt;CreateDomainResponse&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#domainsgetdomainref-promiseobject" title="domains.getDomain(ref) ⇒ Promise.&lt;Object&gt;" class="md-nav__link">
-    domains.getDomain(ref) ⇒ Promise.&lt;Object&gt;
+  <a href="#domainsgetdomainref-promisegetdomainresponse" title="domains.getDomain(ref) ⇒ Promise.&lt;GetDomainResponse&gt;" class="md-nav__link">
+    domains.getDomain(ref) ⇒ Promise.&lt;GetDomainResponse&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#domainsupdatedomainrequest-promiseobject" title="domains.updateDomain(request) ⇒ Promise.&lt;Object&gt;" class="md-nav__link">
-    domains.updateDomain(request) ⇒ Promise.&lt;Object&gt;
+  <a href="#domainsupdatedomainrequest-promiseupdatedomainresponse" title="domains.updateDomain(request) ⇒ Promise.&lt;UpdateDomainResponse&gt;" class="md-nav__link">
+    domains.updateDomain(request) ⇒ Promise.&lt;UpdateDomainResponse&gt;
   </a>
   
 </li>
@@ -1002,22 +1002,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#domainscreatedomainrequest-promiseobject" title="domains.createDomain(request) ⇒ Promise.&lt;Object&gt;" class="md-nav__link">
-    domains.createDomain(request) ⇒ Promise.&lt;Object&gt;
+  <a href="#domainscreatedomainrequest-promisecreatedomainresponse" title="domains.createDomain(request) ⇒ Promise.&lt;CreateDomainResponse&gt;" class="md-nav__link">
+    domains.createDomain(request) ⇒ Promise.&lt;CreateDomainResponse&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#domainsgetdomainref-promiseobject" title="domains.getDomain(ref) ⇒ Promise.&lt;Object&gt;" class="md-nav__link">
-    domains.getDomain(ref) ⇒ Promise.&lt;Object&gt;
+  <a href="#domainsgetdomainref-promisegetdomainresponse" title="domains.getDomain(ref) ⇒ Promise.&lt;GetDomainResponse&gt;" class="md-nav__link">
+    domains.getDomain(ref) ⇒ Promise.&lt;GetDomainResponse&gt;
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#domainsupdatedomainrequest-promiseobject" title="domains.updateDomain(request) ⇒ Promise.&lt;Object&gt;" class="md-nav__link">
-    domains.updateDomain(request) ⇒ Promise.&lt;Object&gt;
+  <a href="#domainsupdatedomainrequest-promiseupdatedomainresponse" title="domains.updateDomain(request) ⇒ Promise.&lt;UpdateDomainResponse&gt;" class="md-nav__link">
+    domains.updateDomain(request) ⇒ Promise.&lt;UpdateDomainResponse&gt;
   </a>
   
 </li>
@@ -1064,18 +1064,17 @@
                 
                 <p><a name="Domains"></a></p>
 <h2 id="domains-fonosservice">Domains ⇐ <code>FonosService</code><a class="headerlink" href="#domains-fonosservice" title="Permanent link">&para;</a></h2>
-<p>Use Fonos Domains, a capability of Fonos SIP Proxy Subsystem,
-to create, update, get and delete domains. Fonos Domains requires of a
-running Fonos deployment.</p>
+<p>Use Fonos Domains, a capability of Fonos SIP Proxy Subsystem, to create,
+update, get and delete Domains. The API requires of a running Fonos deployment.</p>
 <p><strong>Kind</strong>: global class<br />
 <strong>Extends</strong>: <code>FonosService</code><br />
 <strong>See</strong>: module:core:FonosService  </p>
 <ul>
 <li><a href="#Domains">Domains</a> ⇐ <code>FonosService</code><ul>
 <li><a href="#new_Domains_new">new Domains()</a></li>
-<li><a href="#Domains+createDomain">.createDomain(request)</a> ⇒ <code>Promise.&lt;Object&gt;</code></li>
-<li><a href="#Domains+getDomain">.getDomain(ref)</a> ⇒ <code>Promise.&lt;Object&gt;</code></li>
-<li><a href="#Domains+updateDomain">.updateDomain(request)</a> ⇒ <code>Promise.&lt;Object&gt;</code></li>
+<li><a href="#Domains+createDomain">.createDomain(request)</a> ⇒ <code>Promise.&lt;CreateDomainResponse&gt;</code></li>
+<li><a href="#Domains+getDomain">.getDomain(ref)</a> ⇒ <code>Promise.&lt;GetDomainResponse&gt;</code></li>
+<li><a href="#Domains+updateDomain">.updateDomain(request)</a> ⇒ <code>Promise.&lt;UpdateDomainResponse&gt;</code></li>
 <li><a href="#Domains+listDomains">.listDomains(request)</a> ⇒ <code>Promise.&lt;ListDomainsResponse&gt;</code></li>
 <li><a href="#Domains+deleteDomain">.deleteDomain(ref)</a></li>
 </ul>
@@ -1085,16 +1084,16 @@ running Fonos deployment.</p>
 <h3 id="new-domains">new Domains()<a class="headerlink" href="#new-domains" title="Permanent link">&para;</a></h3>
 <p>Constructs a new Domains object.</p>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">Fonos</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@fonos/sdk&#39;</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">domains</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fonos</span><span class="p">.</span><span class="nx">Domains</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">Fonos</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;@fonos/sdk&quot;</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">domains</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fonos</span><span class="p">.</span><span class="nx">Domains</span><span class="p">();</span>
 
-<span class="nx">domains</span><span class="p">.</span><span class="nx">createDomain</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Local Domain&#39;</span><span class="p">,</span> <span class="nx">domainUri</span><span class="o">:</span> <span class="s1">&#39;sip.local&#39;</span><span class="p">...})</span>
+<span class="nx">domains</span><span class="p">.</span><span class="nx">createDomain</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Local Domain&quot;</span><span class="p">,</span> <span class="nx">domainUri</span><span class="o">:</span> <span class="s2">&quot;sip.local&quot;</span><span class="p">...})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>             <span class="c1">// successful response</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>   <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="Domains+createDomain"></a></p>
-<h3 id="domainscreatedomainrequest-promiseobject">domains.createDomain(request) ⇒ <code>Promise.&lt;Object&gt;</code><a class="headerlink" href="#domainscreatedomainrequest-promiseobject" title="Permanent link">&para;</a></h3>
+<h3 id="domainscreatedomainrequest-promisecreatedomainresponse">domains.createDomain(request) ⇒ <code>Promise.&lt;CreateDomainResponse&gt;</code><a class="headerlink" href="#domainscreatedomainrequest-promisecreatedomainresponse" title="Permanent link">&para;</a></h3>
 <p>Creates a new Domain on the SIP Proxy subsystem.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Domains"><code>Domains</code></a>  </p>
 <table>
@@ -1108,7 +1107,7 @@ running Fonos deployment.</p>
 <tbody>
 <tr>
 <td>request</td>
-<td><code>Object</code></td>
+<td><code>CreateDomainRequest</code></td>
 <td>Request for the provision of a new Domain</td>
 </tr>
 <tr>
@@ -1139,30 +1138,30 @@ running Fonos deployment.</p>
 <tr>
 <td>request.accessAllow</td>
 <td><code>string</code></td>
-<td>Optiona list of IPs or networks allow if request.accessDeny is defined</td>
+<td>Optional list of IPs or networks allow if request.accessDeny is defined</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
-   <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Local Domain&#39;</span><span class="p">,</span>
-   <span class="nx">domainUri</span><span class="o">:</span> <span class="s1">&#39;sip.local&#39;</span><span class="p">,</span>
-   <span class="nx">egressRule</span><span class="o">:</span> <span class="s1">&#39;.*&#39;</span><span class="p">,</span>
-   <span class="nx">egressNumberRef</span><span class="o">:</span> <span class="s1">&#39;507f1f77bcf86cd799439011&#39;</span><span class="p">,</span>
-   <span class="nx">accessDeny</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;0.0.0.0/1&#39;</span><span class="p">]</span>     <span class="c1">// Deny all</span>
-   <span class="nx">accessAllow</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;192.168.1.0/255.255.255.0&#39;</span><span class="p">,</span> <span class="s1">&#39;192.168.0.1/31&#39;</span><span class="p">]</span>
-<span class="p">}</span>
+   <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Local Domain&quot;</span><span class="p">,</span>
+   <span class="nx">domainUri</span><span class="o">:</span> <span class="s2">&quot;sip.local&quot;</span><span class="p">,</span>
+   <span class="nx">egressRule</span><span class="o">:</span> <span class="s2">&quot;.*&quot;</span><span class="p">,</span>
+   <span class="nx">egressNumberRef</span><span class="o">:</span> <span class="s2">&quot;cb8V0CNTfH&quot;</span><span class="p">,</span>
+   <span class="nx">accessDeny</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;0.0.0.0/1&quot;</span><span class="p">]</span>     <span class="c1">// Deny all</span>
+   <span class="nx">accessAllow</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;192.168.1.0/255.255.255.0&quot;</span><span class="p">,</span> <span class="s2">&quot;192.168.0.1/31&quot;</span><span class="p">]</span>
+<span class="p">};</span>
 
 <span class="nx">domains</span><span class="p">.</span><span class="nx">createDomain</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>            <span class="c1">// returns the Domain object</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>  <span class="c1">// an error occurred</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>            <span class="c1">// returns the CreateDomainResponse interface</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>  <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="Domains+getDomain"></a></p>
-<h3 id="domainsgetdomainref-promiseobject">domains.getDomain(ref) ⇒ <code>Promise.&lt;Object&gt;</code><a class="headerlink" href="#domainsgetdomainref-promiseobject" title="Permanent link">&para;</a></h3>
+<h3 id="domainsgetdomainref-promisegetdomainresponse">domains.getDomain(ref) ⇒ <code>Promise.&lt;GetDomainResponse&gt;</code><a class="headerlink" href="#domainsgetdomainref-promisegetdomainresponse" title="Permanent link">&para;</a></h3>
 <p>Retrives a Domain by its reference.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Domains"><code>Domains</code></a><br />
-<strong>Returns</strong>: <code>Promise.&lt;Object&gt;</code> - The domain<br />
+<strong>Returns</strong>: <code>Promise.&lt;GetDomainResponse&gt;</code> - The domain<br />
 <strong>Throws</strong>:</p>
 <ul>
 <li>if ref is null or Domain does not exist</li>
@@ -1184,13 +1183,15 @@ running Fonos deployment.</p>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="nx">domains</span><span class="p">.</span><span class="nx">getDomain</span><span class="p">(</span><span class="nx">ref</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="s2">&quot;Nx05y-ldZa&quot;</span><span class="p">;</span>
+
+<span class="nx">domains</span><span class="p">.</span><span class="nx">getDomain</span><span class="p">(</span><span class="nx">ref</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>             <span class="c1">// returns the Domain object</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>             <span class="c1">// returns the CreateGetResponse interface</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>   <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="Domains+updateDomain"></a></p>
-<h3 id="domainsupdatedomainrequest-promiseobject">domains.updateDomain(request) ⇒ <code>Promise.&lt;Object&gt;</code><a class="headerlink" href="#domainsupdatedomainrequest-promiseobject" title="Permanent link">&para;</a></h3>
+<h3 id="domainsupdatedomainrequest-promiseupdatedomainresponse">domains.updateDomain(request) ⇒ <code>Promise.&lt;UpdateDomainResponse&gt;</code><a class="headerlink" href="#domainsupdatedomainrequest-promiseupdatedomainresponse" title="Permanent link">&para;</a></h3>
 <p>Update a Domain at the SIP Proxy subsystem.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Domains"><code>Domains</code></a>  </p>
 <table>
@@ -1241,21 +1242,21 @@ running Fonos deployment.</p>
 </table>
 <p><strong>Example</strong><br />
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
-   <span class="nx">ref</span><span class="o">:</span> <span class="s1">&#39;507f1f77bcf86cd799439011&#39;</span>
-   <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Office Domain &#39;</span><span class="p">,</span>
-   <span class="nx">accessAllow</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;192.168.1.0/255.255.255.0&#39;</span><span class="p">,</span> <span class="s1">&#39;192.168.0.1/31&#39;</span><span class="p">]</span>
-<span class="p">}</span>
+   <span class="nx">ref</span><span class="o">:</span> <span class="s2">&quot;Nx05y-ldZa&quot;</span><span class="p">,</span>
+   <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Office Domain&quot;</span><span class="p">,</span>
+   <span class="nx">accessAllow</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;192.168.1.0/255.255.255.0&quot;</span><span class="p">,</span> <span class="s2">&quot;192.168.0.1/31&quot;</span><span class="p">]</span>
+<span class="p">};</span>
 
 <span class="nx">domains</span><span class="p">.</span><span class="nx">updateDomain</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>            <span class="c1">// returns the Domain from the DB</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>  <span class="c1">// an error occurred</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>            <span class="c1">// returns the UpdateDomainResponse interface</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>  <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="Domains+listDomains"></a></p>
 <h3 id="domainslistdomainsrequest-promiselistdomainsresponse">domains.listDomains(request) ⇒ <code>Promise.&lt;ListDomainsResponse&gt;</code><a class="headerlink" href="#domainslistdomainsrequest-promiselistdomainsresponse" title="Permanent link">&para;</a></h3>
 <p>List the Domains registered in Fonos SIP Proxy subsystem.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Domains"><code>Domains</code></a><br />
-<strong>Returns</strong>: <code>Promise.&lt;ListDomainsResponse&gt;</code> - List of Domains  </p>
+<strong>Returns</strong>: <code>Promise.&lt;ListDomainsResponse&gt;</code> - Paginated list of Domains  </p>
 <table>
 <thead>
 <tr>
@@ -1267,8 +1268,8 @@ running Fonos deployment.</p>
 <tbody>
 <tr>
 <td>request</td>
-<td><code>Object</code></td>
-<td></td>
+<td><code>ListDomainsRequest</code></td>
+<td>Optional parameter with size and token for the request</td>
 </tr>
 <tr>
 <td>request.pageSize</td>
@@ -1278,7 +1279,7 @@ running Fonos deployment.</p>
 <tr>
 <td>request.pageToken</td>
 <td><code>string</code></td>
-<td>The next_page_token value returned from a previous List request, if any</td>
+<td>The next_page_token value returned from a previous List request if any</td>
 </tr>
 </tbody>
 </table>
@@ -1286,12 +1287,12 @@ running Fonos deployment.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
    <span class="nx">pageSize</span><span class="o">:</span> <span class="mf">20</span><span class="p">,</span>
    <span class="nx">pageToken</span><span class="o">:</span> <span class="mf">2</span>
-<span class="p">}</span>
+<span class="p">};</span>
 
 <span class="nx">domains</span><span class="p">.</span><span class="nx">listDomains</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>            <span class="c1">// returns a ListDomainsResponse object</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>  <span class="c1">// an error occurred</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>            <span class="c1">// returns a ListDomainsResponse interface</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>  <span class="c1">// an error occurred</span>
 </code></pre></div>
 <a name="Domains+deleteDomain"></a></p>
 <h3 id="domainsdeletedomainref">domains.deleteDomain(ref)<a class="headerlink" href="#domainsdeletedomainref" title="Permanent link">&para;</a></h3>
@@ -1310,17 +1311,17 @@ a Domain, you must first delete all it's Agents.</p>
 <tr>
 <td>ref</td>
 <td><code>string</code></td>
-<td>Reference to the Domain</td>
+<td>Reference to the Domain you wish to delete</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Example</strong><br />
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="s1">&#39;507f1f77bcf86cd799439011&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="s2">&quot;Nx05y-ldZa&quot;</span><span class="p">;</span>
 
 <span class="nx">domains</span><span class="p">.</span><span class="nx">deleteDomain</span><span class="p">(</span><span class="nx">ref</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">)</span>            <span class="c1">// returns an empty object</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>  <span class="c1">// an error occurred</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;done&quot;</span><span class="p">)</span>            <span class="c1">// returns a reference of the domain</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>  <span class="c1">// an error occurred</span>
 </code></pre></div></p>
                 
                   
