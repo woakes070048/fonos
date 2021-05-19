@@ -753,7 +753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../AbstractTTS/" title="AbstractTTS" class="md-nav__link">
+    <a href="../AbstractTTS.md" title="AbstractTTS" class="md-nav__link">
       AbstractTTS
     </a>
   </li>
@@ -801,7 +801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../GoogleASR/" title="GoogleASR" class="md-nav__link">
+    <a href="../GoogleASR.md" title="GoogleASR" class="md-nav__link">
       GoogleASR
     </a>
   </li>
@@ -813,7 +813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../GoogleTTS/" title="GoogleTTS" class="md-nav__link">
+    <a href="../GoogleTTS.md" title="GoogleTTS" class="md-nav__link">
       GoogleTTS
     </a>
   </li>
@@ -825,7 +825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../MaryTTS/" title="MaryTTS" class="md-nav__link">
+    <a href="../MaryTTS.md" title="MaryTTS" class="md-nav__link">
       MaryTTS
     </a>
   </li>
@@ -873,7 +873,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Verbs/" title="Verbs" class="md-nav__link">
+    <a href="../Verbs.md" title="Verbs" class="md-nav__link">
       Verbs
     </a>
   </li>
@@ -918,7 +918,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#new-callmanager_1" title="new CallManager()" class="md-nav__link">
+    new CallManager()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#callmanagercallrequest-promisecallresponse" title="callManager.call(request) ⇒ Promise.&lt;CallResponse&gt;" class="md-nav__link">
+    callManager.call(request) ⇒ Promise.&lt;CallResponse&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callmanagercallrequest-promisecallresponse_1" title="callManager.call(request) ⇒ Promise.&lt;CallResponse&gt;" class="md-nav__link">
     callManager.call(request) ⇒ Promise.&lt;CallResponse&gt;
   </a>
   
@@ -961,6 +975,8 @@ running Fonos deployment.</p>
 <ul>
 <li><a href="#CallManager">CallManager</a> ⇐ <code>FonosService</code><ul>
 <li><a href="#new_CallManager_new">new CallManager()</a></li>
+<li><a href="#new_CallManager_new">new CallManager()</a></li>
+<li><a href="#CallManager+call">.call(request)</a> ⇒ <code>Promise.&lt;CallResponse&gt;</code></li>
 <li><a href="#CallManager+call">.call(request)</a> ⇒ <code>Promise.&lt;CallResponse&gt;</code></li>
 </ul>
 </li>
@@ -973,7 +989,23 @@ running Fonos deployment.</p>
 <span class="kd">const</span> <span class="nx">callManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fonos</span><span class="p">.</span><span class="nx">CallManager</span><span class="p">()</span>
 
 <span class="nx">callManager</span><span class="p">.</span><span class="nx">call</span><span class="p">({</span>
-  <span class="nx">from</span><span class="o">:</span> <span class="s1">&#39;9102104343&#39;</span><span class="p">,</span>
+  <span class="k">from</span><span class="o">:</span> <span class="s1">&#39;9102104343&#39;</span><span class="p">,</span>
+  <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;17853178070&#39;</span>
+  <span class="nx">app</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>             <span class="c1">// successful response</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
+</code></pre></div>
+<a name="new_CallManager_new"></a></p>
+<h3 id="new-callmanager_1">new CallManager()<a class="headerlink" href="#new-callmanager_1" title="Permanent link">&para;</a></h3>
+<p>Constructs a new CallManager Object.</p>
+<p><strong>Example</strong><br />
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">Fonos</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@fonos/sdk&#39;</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">callManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fonos</span><span class="p">.</span><span class="nx">CallManager</span><span class="p">()</span>
+
+<span class="nx">callManager</span><span class="p">.</span><span class="nx">call</span><span class="p">({</span>
+  <span class="k">from</span><span class="o">:</span> <span class="s1">&#39;9102104343&#39;</span><span class="p">,</span>
   <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;17853178070&#39;</span>
   <span class="nx">app</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
 <span class="p">})</span>
@@ -1009,7 +1041,43 @@ running Fonos deployment.</p>
 </table>
 <p><strong>Example</strong><br />
 <div class="highlight"><pre><span></span><code><span class="nx">callManager</span><span class="p">.</span><span class="nx">call</span><span class="p">({</span>
-  <span class="nx">from</span><span class="o">:</span> <span class="s1">&#39;9102104343&#39;</span><span class="p">,</span>
+  <span class="k">from</span><span class="o">:</span> <span class="s1">&#39;9102104343&#39;</span><span class="p">,</span>
+  <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;17853178070&#39;</span>
+  <span class="nx">app</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>             <span class="c1">// successful response</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span>   <span class="c1">// an error occurred</span>
+</code></pre></div>
+<a name="CallManager+call"></a></p>
+<h3 id="callmanagercallrequest-promisecallresponse_1">callManager.call(request) ⇒ <code>Promise.&lt;CallResponse&gt;</code><a class="headerlink" href="#callmanagercallrequest-promisecallresponse_1" title="Permanent link">&para;</a></h3>
+<p>Calls method.</p>
+<p><strong>Kind</strong>: instance method of <a href="#CallManager"><code>CallManager</code></a><br />
+<strong>Returns</strong>: <code>Promise.&lt;CallResponse&gt;</code> - call results<br />
+<strong>Throws</strong>:</p>
+<ul>
+<li>if the from number doesn't exist</li>
+<li>if could not connect to the underline services</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>request</td>
+<td><code>CallRequest</code></td>
+<td>call options.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br />
+<div class="highlight"><pre><span></span><code><span class="nx">callManager</span><span class="p">.</span><span class="nx">call</span><span class="p">({</span>
+  <span class="k">from</span><span class="o">:</span> <span class="s1">&#39;9102104343&#39;</span><span class="p">,</span>
   <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;17853178070&#39;</span>
   <span class="nx">app</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
 <span class="p">})</span>
